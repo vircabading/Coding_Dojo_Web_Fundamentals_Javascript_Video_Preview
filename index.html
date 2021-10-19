@@ -45,8 +45,9 @@
                 </svg>
             </figure> -->
 <!-- //////////////// VIDEO /////////////////////////////////////////////////// -->
-            <video id="maim_video" width="720" height="400" controls
-                        onpointerover="preview_video(this)">
+            <video id="main_video" width="720" height="400" controls
+                        onpointerover="preview_video(this)"
+                        onpointerleave="pause_video(this)">
                 <source src="assets/pexels-krypto-trekker-6939684.mp4" type=video/mp4>
                 <source src=”assets/sample.mp4” type=video/ogg>
               </video>
