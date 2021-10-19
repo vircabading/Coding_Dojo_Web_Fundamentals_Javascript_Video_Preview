@@ -32,22 +32,11 @@
         <!-- left column -->
         <div class="col-l">
 
-            <!-- this is a placeholder replace it with a real video -->
-            <!-- <figure class="placeholder">
-                <svg style="text-anchor:middle;" width="720" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 720x400" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#868e96"></rect>
-                    <video width="320" height="240" controls>
-                        <source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg>
-                        <source src="/build/videos/arcnet.io(7-sec).mp4" type=video/mp4>
-                      </video>
-                    <!-- <text x="50%" y="50%" dy=".3em" fill="#dee2e6" >Replace Me!</text> -->
-                </svg>
-            </figure> -->
-<!-- //////////////// VIDEO /////////////////////////////////////////////////// -->
+            <!--//// VIDEO /////////////////////////////////////////////////// -->
             <video id="main_video" width="720" height="400" controls
                         onpointerover="preview_video(this)"
-                        onpointerleave="pause_video(this)">
+                        onpointerleave="pause_video(this)"
+                        title="krypto-trekker-bamboo-bridge">
                 <source src="assets/pexels-krypto-trekker-6939684.mp4" type=video/mp4>
                 <source src=”assets/sample.mp4” type=video/ogg>
               </video>
@@ -55,7 +44,7 @@
             <!-- video info -->
             <div class="row">
                 <div class="start">
-                    <h1>Example Video Title</h1>
+                    <h1 id="main_video_title">Example Video Title</h1>
                     <h3>1.3K Views | June, 18, 2021</h3>
                     <div class="user">
                         <img src="assets/user.png" alt="user-circle" class="avatar-s">
