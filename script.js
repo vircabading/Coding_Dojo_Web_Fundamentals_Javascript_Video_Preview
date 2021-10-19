@@ -22,8 +22,16 @@ function get_main_video_title() {                               // Function that
     return video_object.title;
 }
 
+function get_todays_date() {                                    // Function that gets today's date
+    var today = new Date();
+    var date = (today.getMonth()+1) + "/" + today.getDate() + "/" + today.getFullYear();
+    return date;
+}
+
 //// MAIN EXECUTABLE SECTION ///////////////////////////////
 
 console.log("page loaded...");
 
 document.getElementById("main_video_title").innerText = get_main_video_title();  // Place the title of the main video
+
+document.getElementById("todays_date").innerText = get_todays_date();   // Place today's date on document
